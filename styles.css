@@ -27,7 +27,7 @@ body {
     left: -50%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(-45deg, #cfb107, #9c019c);
+    background: linear-gradient(-45deg, #37B5B6, #9c019c);
     z-index: 6;
     transform: translateX(100%);
     transition: 1s ease-in-out;
@@ -98,11 +98,11 @@ form.sign-up-form {
     color: #444;
 }
 .error {
-    color: red;
+    color: rgb(250, 71, 71);
     margin-top: 5px;
     text-align: left;
     font-size: 12px;
-    font-style: italic;
+    
 }
 
 .input-field {
@@ -123,7 +123,7 @@ form.sign-up-form {
     height: 50px;
     border: none;
     border-radius: 50px;
-    background: #6d296d;
+    background: #492E87;
     color: #fff;
     font-weight: 600;
     margin: 10px 0;
@@ -159,7 +159,7 @@ a {
 .social-icon:hover {
     color: #df4adf;
     border-color: #df4adf;
-    background-image: linear-gradient(135deg, rgb(239, 187, 239), yellow);
+    background-image: linear-gradient(45deg, #740074, #37B5B6);
 }
 .panels-container {
     position: absolute;
@@ -198,11 +198,7 @@ a {
     font-size: 15px;
     padding: 10px 0;
 }
-.image {
-    width: 100%;
-    transition: 1.1s ease-in-out;
-    transition-delay: 0.4s;
-}
+
 .left-panel .image,
 .left-panel .content {
     transform: translateX(-200%);

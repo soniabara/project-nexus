@@ -26,9 +26,9 @@ document.querySelector(".sign-up-form").addEventListener("submit", function(even
     const usernameInput = document.getElementById('signup-username');
     const emailInput = document.getElementById('signup-email');
     const passwordInput = document.getElementById('signup-password');
-    const usernameError = document.getElementById('username-error');
-    const emailError = document.getElementById('email-error');
-    const passwordError = document.getElementById('password-error');
+    const usernameError = document.getElementById('signup-username-error');
+    const emailError = document.getElementById('signup-email-error');
+    const passwordError = document.getElementById('signup-password-error');
     let isValid = true;
 
     if (!usernameInput.value.trim()) {
@@ -59,15 +59,17 @@ document.querySelector(".sign-up-form").addEventListener("submit", function(even
     }
 
     if (isValid) {
+        // Submit the form or perform further processing
     }
 });
+
 document.querySelector(".sign-in-form").addEventListener("submit", function(event) {
     event.preventDefault();
 
     const usernameInput = document.getElementById('signin-username');
     const passwordInput = document.getElementById('signin-password');
-    const usernameError = document.getElementById('username-error');
-    const passwordError = document.getElementById('password-error');
+    const usernameError = document.getElementById('signin-username-error');
+    const passwordError = document.getElementById('signin-password-error');
     let isValid = true;
 
     if (!usernameInput.value.trim()) {
@@ -80,11 +82,15 @@ document.querySelector(".sign-in-form").addEventListener("submit", function(even
     if (!passwordInput.value.trim()) {
         passwordError.innerText = 'Please enter your password';
         isValid = false;
+    } else if (passwordInput.value.trim().length < 6) {
+        passwordError.innerText = 'Password must be at least 6 characters';
+        isValid = false;
     } else {
         passwordError.innerText = '';
     }
 
     if (isValid) {
+        // Submit the form or perform further processing
     }
 });
 
